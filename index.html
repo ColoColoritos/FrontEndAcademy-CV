@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    
+        <title>Mi CV</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#mi">Sobre Mi</a></li>
+                <li><a href="#eductacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="yo">
+            <div class="nombre">
+                <h1><strong>Wendy</strong> Holmes</h1>
+                <h3>Front-End Developer</h3>
+            </div>
+            <div class="foto">
+                <img src="https://randomuser.me/api/portraits/women/28.jpg">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+    <aside>
+        <div class="sobre-mi">
+            <h2 id="mi">Sobre Mi</h2>
+            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sedconsectetuer nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+        </div>
+        <div class="contact">
+            <h2 id="contact">Contacto</h2>
+            <p><a href="www.website.com">www.website.com</a></p>
+            <p><a href="tel:+4213391287">(421) 339-1287</a></p>
+            <p><a href="mailto:wendy.holmes@example.com">wendy.holmes@example.com</a></p>
+            <p>6132 Cackson St</p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Adobe</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+    </aside>
+    <article>
+        <h2 id="educacion">Educación</h2>
+
+        <div class="info">
+            <h4>2005-2009</h4>
+            <div>
+                <h5>SCHOOL NAME 1</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <h4>2009-2014</h4>
+            <div>
+                <h5>SCHOOL NAME 2</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <h4>2014-2016</h4>
+            <div>
+                <h5>SCHOOL NAME 3</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        
+        <h2 id="experiencia">Experiencia</h2>
+
+        <div class="info">
+            <h4>2012-2014</h4>
+            <div>
+                <h5>JOB TITLE, COMPANY NAME</h5>
+                <p>
+                    Work description, assignments and tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit.dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <h4>2012-2016</h4>
+            <div>
+                <h5>JOB TITLE, COMPANY NAME</h5>
+                <p>
+                    Work description, assignments and tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit.dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit aspernatur, quia velit enim molestias necessitatibus illum saepe consectetur minima reprehenderit molestiae obcaecati perspiciatis illo! Facere at animi tempora. Animi.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <h4>2016-2018</h4>
+            <div>
+                <h5>JOB TITLE, COMPANY NAME</h5>
+                <p>
+                    Work description, assignments and tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit.dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="info">
+            <h4>2018-Acte</h4>
+            <div>
+                <h5>JOB TITLE, COMPANY NAME</h5>
+                <p>
+                    Work description, assignments and tasks. Lorem ipsum dolor sit amet, consectetur adipiscing elit.dolor sit amet, consectetur adipiscing elit.
+                    <span id="points">...</span>
+                    <span id="moreText"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum accusamus sunt harum nobis at id atque eius, laborum cumque delectus architecto sint eos voluptatum nam obcaecati. Similique cupiditate deleniti assumenda.</span>
+                </p>
+                <button onclick="toggleText()" id="textButton">More description about this job</button>
+            </div>
+        </div>
+    </article>
+    </main>
+
+    <footer>
+        <h3>Escribeme!!!</h3>
+        <form action="" method="post">	
+            <p>
+                <label for="nombre">Nombre <span class="obligatorio">*</span></label> 
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>	
+            <p>
+                <label for="email">Email<span class="obligatorio">*</span></label> 
+                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+            <p>
+                <label for="asunto">Asunto<span class="obligatorio">*</span></label> 
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+            </p>		
+            <p>
+                <label for="mensaje">Mensaje<span class="obligatorio">*</span></label> 
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+            </p>	  			
+            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            <p class="aviso">
+                <span class="obligatorio">*</span>los campos son obligatorios.
+            </p>	
+        </form>
+    </footer>
+    <script src="js/functions.js"></script>
+</html>
